@@ -47,6 +47,10 @@ This project is a fully functional chat application built using **React**, **Fir
 - **Block Users**: You can block or unblock users to manage your privacy.
 - **Sign Out**: Use the "Logout" button to safely sign out of your account.
 
+## Project URL
+
+Visit the live project here: [Chat_App Live](https://chatapp-e0119.web.app/)
+
 ## Project Images
 
 ![Login_Page](https://github.com/user-attachments/assets/77ffda09-cc3e-475b-9378-e9aecefd701f)
