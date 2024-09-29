@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background-image: url("/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    height: 90vh;
+    width: 80vw;
+    background-color: rgba(17, 25, 40, 0.65);
+    backdrop-filter: blur(1.1875rem) saturate(180%);
+    border-radius: 0.75rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    overflow: hidden; /* To hide any overflow */
+}
+
+/* For Child Components inside .container */
+.item {
+    flex: 1;
+    overflow-y: auto; /* Enable scrolling if content exceeds */
+    margin: 0.5rem;
+}
+
+.loading {
+    padding: 3.125rem;
+    font-size: 2.25rem;
+    border-radius: 0.625rem;
+    background-color: rgba(17, 25, 40, 0.9);
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        width: 90vw;
+        height: 85vh;
+        flex-direction: column; /* Switch to column layout */
+        justify-content: flex-start;
+        align-items: center; /* Center items horizontally */
+        padding: 2rem;
+        overflow: auto; /* Allow scrolling for smaller screens */
+    }
+
+    .item {
+        width: 100%; /* Ensure each item takes full width */
+        margin: 1rem 0; /* Add vertical spacing between items */
+        overflow-y: auto; /* Allow scroll if item content is too long */
+    }
+
+    .loading {
+        font-size: 1.75rem;
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95vw;
+        height: 80vh;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        overflow: auto; /* Allow scrolling */
+    }
+
+    .item {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .loading {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 1rem;
+        overflow: auto; /* Allow scrolling on smaller screens */
+    }
+
+    .item {
+        width: 100%; /* Ensure full width */
+        flex-grow: 1;
+    }
+
+    .loading {
+        font-size: 1.25rem;
+        padding: 1.5rem;
+    }
+}
