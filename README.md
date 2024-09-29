@@ -49,10 +49,7 @@ This project is a fully functional chat application built using **React**, **Fir
 
 ## Project Images
 
-_Add screenshots of your project here:_
-
-1. ![Chat Interface](./images/chat_interface.png)
-2. ![Photo Sharing](./images/photo_sharing.png)
+![Login_Page](https://github.com/user-attachments/assets/77ffda09-cc3e-475b-9378-e9aecefd701f)
 
 ## Acknowledgements
 
